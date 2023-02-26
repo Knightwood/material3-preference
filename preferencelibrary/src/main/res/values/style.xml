@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--preference主题-->
+    <style name="M3PreferenceStyle" parent="PreferenceThemeOverlay.v14.Material">
+        <item name="M3PreferenceTextFieldStyle">@style/Widget.Material3.TextInputLayout.OutlinedBox</item>
+        <!--<item name="preferenceCategoryStyle">@style/PreferenceTheme.Category</item>-->
+        <item name="switchPreferenceStyle">@style/Preference.SwitchPreferenceCompat</item>
+        <item name="editTextPreferenceStyle">@style/Preference.EditTextPreference</item>
+        <item name="sliderPreferenceStyle">@style/Preference.SliderPreference</item>
+    </style>
+
+    <!--定制preference的category布局-->
+    <style name="Preference.Category" parent="Preference.Category.Material">
+        <item name="android:layout">@layout/layout_preference_category</item>
+    </style>
+    <!--定制preference的switch按钮-->
+    <style name="Preference.SwitchPreferenceCompat" parent="Preference.SwitchPreferenceCompat.Material">
+        <item name="android:widgetLayout">@layout/preference_widget_material_switch</item>
+    </style>
+    <!--定制preference的输入框-->
+    <style name="Preference.EditTextPreference" parent="Preference.DialogPreference.EditTextPreference.Material">
+        <item name="android:dialogLayout">@layout/m3_preference_dialog_edit</item>
+    </style>
+
+    <!--sliderPreference的样式-->
+    <style name="Preference.SliderPreference" parent="Preference.Material">
+        <item name="android:layout">@layout/preference_widget_slider</item>
+        <item name="adjustable">true</item>
+        <item name="showSeekBarValue">false</item>
+    </style>
+</resources>
