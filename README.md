@@ -2,11 +2,14 @@
 
 This library implements Material 3 Preference theme by extending AndroidX preference theme.
 
-### Download [![](https://jitpack.io/v/Knightwood/material3-preference.svg)](https://jitpack.io/#Knightwood/material3-preference)
+### Download Tag: [![](https://jitpack.io/v/Knightwood/material3-preference.svg)](https://jitpack.io/#Knightwood/material3-preference)
+
+* 1.2 first release
+* 1.3 无新功能及改进，仅将minsdk从23降至21
 
 ```groovy
 dependencies {
-    implementation "com.github.knightwood:material3-preference:1.2"
+    implementation "com.github.knightwood:material3-preference:Tag"
 }
 ```
 
