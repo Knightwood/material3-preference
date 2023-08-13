@@ -7,6 +7,7 @@ This library implements Material 3 Preference theme by extending AndroidX prefer
 * 1.2 first release
 * 1.3 无新功能及改进，仅将minsdk从23降至21
 * 1.4 添加编辑偏好设置的委托工具
+* 1.5 添加mmkv编辑委托工具
 
 ```groovy
 dependencies {
@@ -91,6 +92,23 @@ dependencies {
 
 </PreferenceScreen>
 ```
+
+
+
+### MMKV委托工具类
+
+```
+1. 获取mmkv实例
+val mv = MMKV.defaultMMKV()
+2.使用委托的方式生成一个委托对象，除了[MMKV.parcelableM]方法之外，初始值可选
+var example by mv.strM("kk","初始值")
+3.使用赋值将值存入
+example="新的值"
+4.直接使用即读取值，如果没有值写入，读取出来的会是默认值。
+log.d(TAG,example)
+```
+
+
 
 ### preference委托工具类
 
